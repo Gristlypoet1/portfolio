@@ -32,35 +32,23 @@ body {
 #home {
   background-color: var(--primary-color);
   padding: 50px 0;
+  position: relative;
 }
 
-.topmenu {
-  color: var(--text-color);
-  margin: 10px;
-  padding: 20px;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-.topmenu:hover {
-  color: var(--hover-color);
-  font-weight: bolder;
-  text-decoration: underline;
-}
-
-.topdiv {
-  float: right;
-  padding-right: 1cm;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 1rem;
 }
 
 .profile_name {
-  float: left;
-  padding-left: 1.5cm;
   color: var(--text-color);
   font-size: 25px;
 }
 
-.profile_name .contact_info {
+.contact_info {
   font-size: 15px;
   font-style: italic;
   display: flex;
@@ -71,6 +59,36 @@ body {
 .contact_info img {
   width: 25px;
   margin-right: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.topmenu {
+  color: var(--text-color);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.topmenu:hover {
+  color: var(--hover-color);
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  margin: 4px 0;
 }
 
 /* =======================
@@ -161,6 +179,35 @@ h2 {
 }
 
 /* =======================
+   Recommendations
+======================= */
+.all_recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.recommendation {
+  font-style: italic;
+  width: 350px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  border: 1px solid gray;
+  font-size: 18px;
+  height: 150px;
+}
+
+.recommendation span {
+  color: var(--accent-color);
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* =======================
    Knoppen & Scroll
 ======================= */
 .iconbutton {
@@ -228,28 +275,31 @@ button:hover,
   }
 
   h2 {
-    float: none;
     margin: 20px auto;
   }
 
-  .topdiv,
-  .profile_name {
-    float: none;
-    text-align: center;
-    padding: 0;
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .projects-container {
-    margin-left: 20px;
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
   }
 }
 
 @media (max-width: 480px) {
-  .topmenu {
-    display: block;
-    padding: 10px 0;
-  }
-
   .skill {
     width: 90%;
     margin: 10px auto;
