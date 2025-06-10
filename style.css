@@ -326,14 +326,13 @@ button:hover {
   color: var(--text-color);
 }
 
-/* Mobielvriendelijke layout */
 @media (max-width: 768px) {
-  .about-me {
+  #about-me {
     flex-direction: column;
     text-align: center;
   }
 
-  .about-me .profile_image {
+  #about-me .profile_image {
     width: 80%;
     height: auto;
   }
