@@ -67,6 +67,10 @@ body {
   float:left;
 }
 
+.mail {
+  color: var(--text-color);
+}
+
 .mail:hover {
   text-decoration: underline;
 }
