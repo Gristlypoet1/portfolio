@@ -130,8 +130,10 @@ h2 {
 
 .all_skills {
   display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
+  flex-wrap: wrap;
+  justify-content: center; /* <-- dit centreren de skills */
+  gap: 30px;               /* optioneel: mooie afstand tussen skills */
+  padding: 30px;           /* optioneel: ruimte rondom */
 }
 
 .skill {
