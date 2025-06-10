@@ -330,11 +330,6 @@ button:hover {
 #footerlayout {
   text-align: center;
   background-color:  #7600bc;
-  padding-bottom: 1cm;
-  margin-left:-1cm;
-  margin-right:-1cm;
-  margin-top:-1cm;
-  padding-top: 1cm;
-  padding-bottom: 1cm;
-  height: 5mm;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
