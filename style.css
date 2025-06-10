@@ -84,6 +84,7 @@ h2 {
 
 .container {
   display: flex;
+  text-align: center;
 }
 
 /* About Me */
