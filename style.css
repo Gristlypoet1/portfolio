@@ -120,6 +120,7 @@ h2 {
   gap: 30px;
   justify-items: center;
   padding: 30px;
+  align-self: center;
 }
 
 .skill {
