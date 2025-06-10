@@ -346,3 +346,7 @@ button:hover {
   margin-right:-10px;
   margin-bottom: -10px;
 }
+
+.footer p {
+  color: var(--text-color);
+}
