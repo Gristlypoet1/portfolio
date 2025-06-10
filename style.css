@@ -86,10 +86,6 @@ h2 {
   display: flex;
 }
 
-.container h1, p {
-  text-align: center;
-}
-
 /* About Me */
 
 .about-me {
@@ -101,12 +97,14 @@ h2 {
   font-size: 65px;
   margin-top: 90px;
   color: #7600bc;
+  text-align: center;
 }
 
 #about-me p {
   font-size: 25px;
   color: rgb(128, 128, 128);
   margin-top: -1cm;
+  text-align: center;
 }
 
 .profile_image {
