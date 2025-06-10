@@ -67,6 +67,10 @@ body {
   float:left;
 }
 
+.mail:hover {
+  text-decoration: underline;
+}
+
 /* Titles */
 
 h2 {
