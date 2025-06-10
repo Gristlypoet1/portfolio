@@ -67,8 +67,11 @@ body {
   float:left;
 }
 
-.mail {
+a.mail {
   color: var(--text-color);
+  text-decoration: none;
+  font-weight: normal;
+  cursor: default;
 }
 
 .mail:hover {
