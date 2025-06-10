@@ -27,7 +27,7 @@ body {
  }
 
 .topmenu {
-  color: var(--accent-color);
+  color: var(--text-color);
   margin: 10px;
   padding: 20px;
   font-size: 20px;
