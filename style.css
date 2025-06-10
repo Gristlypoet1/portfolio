@@ -4,18 +4,15 @@ body {
 
 /* Navigation Bar */
 
-/*
 #home {
   background-color:  #7600bc;
-  padding-bottom: 1cm;
-  margin-left:-1cm;
-  margin-right:-1cm;
-  margin-top:-1cm;
-  padding-top: 2cm;
-  padding-bottom: 2cm;
+  margin-left:-10px;
+  margin-right:-10px;
+  margin-top:-10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   height: 5mm;
  }
-*/
 
 .topmenu {
   color: lightgray;
