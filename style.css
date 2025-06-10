@@ -324,3 +324,17 @@ button:hover {
   text-align: center;
   cursor: pointer;
 }
+
+/* Footer */
+
+#footerlayout {
+  text-align: center;
+  background-color:  #7600bc;
+  padding-bottom: 1cm;
+  margin-left:-1cm;
+  margin-right:-1cm;
+  margin-top:-1cm;
+  padding-top: 2cm;
+  padding-bottom: 2cm;
+  height: 5mm;
+}
