@@ -331,4 +331,6 @@ button:hover {
   background-color:  #7600bc;
   padding-bottom: 10px;
   padding-top: 10px;
+  margin-left:-10px;
+  margin-right:-10px;
 }
