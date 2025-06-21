@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #D6EAF8;       /* Lichtblauw voor header/footer */
-  --accent-color: #58B7A0;        /* Zacht teal voor knoppen/links */
-  --hover-color: #379683;         /* Donkerder teal voor hover */
-  --background-color: #FDFEFE;    /* Helder ivoorwit voor de achtergrond */
+  --primary-color: #D6EAF8;
+  --accent-color: #58B7A0;
+  --hover-color: #379683;
+  --background-color: #FDFEFE;
   --text-color: #2E2E2E;
-  --text-secondary: #808080;          /* Donkergrijs voor leesbare tekst */
+  --text-secondary: #808080;
   --primary-shadow: rgba(0, 0, 0, 0.1);
 }
 
@@ -103,7 +103,7 @@ h2 {
   position: relative;
 }
 
-/* Used in the About Me sections */
+/* About Me */
 
 .container {
   display: flex;
@@ -228,69 +228,6 @@ h2 {
   right: 3%;
   bottom: 3%;
   cursor: pointer;
-}
-
-/* Form Pop-up */
-
-.popup {
-  width:400px;
-  background-color: var(--background-color);
-  border-radius: 3mm;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  position: fixed;
-  /* padding: 30px; */
-  visibility: hidden;
-}
-
-.popup img {
-  padding-top: 20px;
-}
-
-.popup button {
-  background-color: var(--background-color);
-  border: 1px solid var(--hover-color);
-  color: var(--text-color);
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  margin: 50px;
-  padding: 10px;
-  width: 2in;
-  font-size: 20px;
-  margin-left: 25%;
-}
-
-.popup button:hover {
-  background-color: var(--hover-color);
-  border: 2px solid #7600bc;
-  color: var(--text-color);
-  display: block;
-  font-weight: bolder;
-  text-align: center;
-  cursor: pointer;
-  margin-left: 25%;
-}
-
-/* Recommendation Form */
-
-input, textarea {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  margin: 10px;  
-  width:100%;
-}
-
-fieldset {
-  display: flexbox;
-  align-content: center;
-  justify-content: center;  
-  padding: 25px; 
-  margin-left: 50px; 
-  margin-right: 50px;   
-  border: thin solid white;
-  width: 50%;
 }
 
 /* Buttons */
