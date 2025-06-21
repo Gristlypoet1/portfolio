@@ -71,7 +71,6 @@ a.mail {
   color: var(--text-color);
   text-decoration: none;
   font-weight: normal;
-  cursor: default;
 }
 
 .mail:hover {
@@ -233,7 +232,6 @@ h2 {
   color: var(--text-color);
   text-decoration: none;
   font-weight: normal;
-  cursor: default;
 }
 
 .credential a:hover {
