@@ -236,6 +236,10 @@ h2 {
   cursor: default;
 }
 
+.credential a:hover {
+  text-decoration: underline;
+}
+
 .flex_center {
   display: flex;
   align-items: center;
