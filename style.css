@@ -227,7 +227,14 @@ h2 {
   color: gray;
   margin-block-start: 5px;
   margin-block-end: 5px;
-} 
+}
+
+.credential a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: normal;
+  cursor: default;
+}
 
 .flex_center {
   display: flex;
