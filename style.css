@@ -392,7 +392,7 @@ h2 {
     font-size: 16px;
     padding: 10px 0;
   }
-  /* Skills in 2 kolommen op mobiel */
+  
   .all_skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
