@@ -8,13 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./style.css" />
   <link rel="icon" href="/pictures/ScriptWave_logo.png" type="image/png" />
+  <link rel="canonical" href="https://scriptwave.be/" />
 
   <!-- SEO: Open Graph / Twitter -->
   <meta property="og:title" content="Kevin Verherstraeten - Portfolio" />
   <meta property="og:description" content="Portfolio van Kevin Verherstraeten, IT professional en webdeveloper. Bekijk mijn projecten, vaardigheden en certificaten." />
-  <meta property="og:image" content="https://yourdomain.be/pictures/ScriptWave_logo.png" />
+  <meta property="og:image" content="https://scriptwave.be/pictures/ScriptWave_logo.png" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.be/" />
+  <meta property="og:url" content="https://scriptwave.be/" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Google Analytics -->
@@ -25,18 +26,32 @@
     gtag("js", new Date());
     gtag("config", "G-MYZE53BTEB");
   </script>
+
+  <!-- Structured Data Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kevin Verherstraeten",
+    "url": "https://scriptwave.be/",
+    "sameAs": [
+      "https://github.com/Gristlypoet1"
+    ],
+    "jobTitle": "IT Professional & Webdeveloper",
+    "image": "https://scriptwave.be/pictures/profile_picture.png",
+    "description": "Portfolio van Kevin Verherstraeten, IT professional en webdeveloper. Bekijk mijn projecten, vaardigheden en certificaten."
+  }
+  </script>
 </head>
 
 <body>
-
-  <!-- Navigation Bar -->
   <header>
     <nav aria-label="Primary navigation">
       <div id="home">
         <div class="profile_name" aria-label="Site owner name and contact">
           Kevin Verherstraeten
           <div class="contact_info">
-            <img src="pictures/envelope.png" alt="Email icon" />
+            <img src="pictures/envelope.png" alt="Email icon" loading="lazy" />
             <a href="mailto:kevin@scriptwave.be" class="mail">Kevin@ScriptWave.be</a>
           </div>
         </div>
@@ -55,17 +70,14 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
   <main>
-
-    <!-- About Me -->
     <section id="about-me" class="container" aria-labelledby="aboutme-title">
       <div>
         <img src="pictures/profile_picture.png" class="profile_image" alt="Profielfoto Kevin Verherstraeten" />
       </div>
       <article>
         <h1 id="aboutme-title">
-          Hi, I'm Kevin! <img src="pictures/waving-hand.png" width="60" alt="Waving hand emoji" />
+          Hi, I'm Kevin! <img src="pictures/waving-hand.png" width="60" alt="Waving hand emoji" loading="lazy" />
         </h1>
         <p>
           I’m a motivated and curious IT professional with a strong interest in web development. I currently work as a Service Desk/System Engineer,
@@ -83,56 +95,54 @@
       <h2 id="skills-title">Skills</h2>
       <div class="all_skills" role="list">
         <div class="skill" role="listitem">
-          <img src="pictures/html5.png" alt="HTML5 logo" />
+          <img src="pictures/html5.png" alt="HTML5 logo" loading="lazy" />
           <h6>HTML</h6>
           <span class="skill-level">Intermediate</span>
         </div>
         <div class="skill" role="listitem">
-          <img src="pictures/js.jpeg" alt="JavaScript logo" />
+          <img src="pictures/js.jpeg" alt="JavaScript logo" loading="lazy" />
           <h6>JavaScript</h6>
           <span class="skill-level">Beginner</span>
         </div>
         <div class="skill" role="listitem">
-          <img src="pictures/CSS3.png" alt="CSS3 logo" />
+          <img src="pictures/CSS3.png" alt="CSS3 logo" loading="lazy" />
           <h6>CSS</h6>
           <span class="skill-level">Intermediate</span>
         </div>
         <div class="skill" role="listitem">
-          <img src="pictures/php.png" alt="PHP logo" />
+          <img src="pictures/php.png" alt="PHP logo" loading="lazy" />
           <h6>PHP</h6>
           <span class="skill-level">Beginner</span>
         </div>
         <div class="skill" role="listitem">
-          <img src="pictures/mysql.png" alt="MySQL logo" />
+          <img src="pictures/mysql.png" alt="MySQL logo" loading="lazy" />
           <h6>MySQL</h6>
           <span class="skill-level">Beginner</span>
         </div>
         <div class="skill" role="listitem">
-          <img src="pictures/react.svg" alt="React logo" />
+          <img src="pictures/react.svg" alt="React logo" loading="lazy" />
           <h6>React</h6>
           <span class="skill-level">Beginner</span>
         </div>
       </div>
     </section>
 
-    <!-- Credentials -->
     <section id="credentials" aria-labelledby="credentials-title">
       <h2 id="credentials-title">Credentials</h2>
       <div class="all_credentials" role="list">
         <div class="credential" role="listitem">
           <a href="https://www.credly.com/users/kevin-verherstraeten" target="_blank" rel="noopener noreferrer">
-            <img src="pictures/Credly.png" alt="Credly profile logo" />
+            <img src="pictures/Credly.png" alt="Credly profile logo" loading="lazy" />
           </a>
         </div>
         <div class="credential" role="listitem">
           <a href="https://www.coursera.org/learner/kevin-verherstraeten" target="_blank" rel="noopener noreferrer">
-            <img src="pictures/coursera-logo.svg" alt="Coursera logo" />
+            <img src="pictures/coursera-logo.svg" alt="Coursera logo" loading="lazy" />
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
     <section class="projects" id="projects" aria-labelledby="projects-title">
       <h2 id="projects-title">Projects</h2>
       <div class="projects-container">
@@ -166,22 +176,18 @@
         </article>
       </div>
     </section>
-
   </main>
 
-  <!-- Scroll to Top Button -->
   <button class="iconbutton" aria-label="Scroll to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="30" height="30" aria-hidden="true">
       <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
     </svg>
   </button>
 
-  <!-- Footer -->
   <footer id="footerlayout" role="contentinfo">
     <p>&copy; 2025 ScriptWave. All rights reserved.</p>
   </footer>
 
   <script src="./script.js"></script>
 </body>
-
 </html>

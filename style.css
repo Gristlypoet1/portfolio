@@ -1,3 +1,4 @@
+/* ========== ROOT & BASE ========== */
 :root {
   --primary-color: #58B7A0;
   --primary-color-light: #A6D8D4;
@@ -19,7 +20,7 @@ body {
   padding: 0;
 }
 
-/* NAVIGATION */
+/* ========== NAVIGATION ========== */
 #home {
   background-color: var(--primary-color-light);
   padding: 20px 40px;
@@ -81,14 +82,14 @@ a.mail:hover {
   transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
-.topmenu:hover{
+.topmenu:hover {
   background-color: var(--hover-color);
   color: #fff;
   text-decoration: none;
   outline: none;
 }
 
-/* SECTION TITLES */
+/* ========== SECTION TITLES ========== */
 h2 {
   font-size: 40px;
   color: var(--primary-color);
@@ -98,7 +99,7 @@ h2 {
   font-weight: 700;
 }
 
-/* ABOUT ME */
+/* ========== ABOUT ME ========== */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -128,7 +129,7 @@ h2 {
   line-height: 1.5;
 }
 
-/* SKILLS */
+/* ========== SKILLS ========== */
 .all_skills {
   display: flex;
   justify-content: center;
@@ -144,37 +145,13 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 6px;
   margin: 50px;
   padding: 20px 15px;
   width: 180px;
   box-shadow: 0 3px 12px var(--shadow-light);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius); /* Alleen deze nodig */
   text-align: center;
   transition: transform 0.3s ease;
-}
-
-.skill img {
-  height: 35px;
-  margin-bottom: 10px;
-}
-
-.skill h6 {
-  font-size: 20px;
-  margin: 0;
-}
-
-.skill-level {
-  font-size: 14px;
-  font-weight: normal;
-  color: var(--text-secondary);
-  font-style: italic;
-  margin-top: 4px;
-}
-
-.skill:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .skill img {
@@ -186,6 +163,7 @@ h2 {
   font-weight: 700;
   font-size: 18px;
   color: var(--primary-color);
+  margin: 0;
 }
 
 .skill-level {
@@ -194,9 +172,15 @@ h2 {
   color: var(--text-secondary);
   margin-left: 6px;
   font-style: italic;
+  margin-top: 4px;
 }
 
-/* CREDENTIALS */
+.skill:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ========== CREDENTIALS ========== */
 .all_credentials {
   display: flex;
   justify-content: center;
@@ -240,7 +224,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* PROJECTS */
+/* ========== PROJECTS ========== */
 .projects-container {
   max-width: 900px;
   margin: 0 auto 50px;
@@ -298,7 +282,7 @@ h2 {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* SCROLL TO TOP BUTTON */
+/* ========== SCROLL TO TOP BUTTON ========== */
 .iconbutton {
   width: 50px;
   height: 50px;
@@ -319,7 +303,7 @@ h2 {
   background-color: var(--hover-color);
 }
 
-/* FOOTER */
+/* ========== FOOTER ========== */
 #footerlayout {
   text-align: center;
   background-color: var(--primary-color-light);
@@ -330,7 +314,7 @@ h2 {
   box-shadow: inset 0 1px 0 #ffffffaa;
 }
 
-/* Hamburger menu styles */
+/* ========== HAMBURGER MENU ========== */
 .nav-toggle {
   display: none;
 }
@@ -355,46 +339,25 @@ h2 {
   transition: 0.3s;
 }
 
-@media (max-width: 600px) {
-  .nav-toggle-label {
-    display: flex;
-    margin-bottom: 8px;
-  }
-  .topdiv {
-    display: none;
-    width: 100%;
-  }
-  .nav-toggle:checked + .nav-toggle-label + .topdiv {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-}
-
-/* RESPONSIVE */
+/* ========== MEDIA QUERIES ========== */
 @media (max-width: 900px) {
   .container {
     flex-direction: column;
     align-items: center;
   }
-
   #about-me h1 {
     font-size: 36px;
   }
-
   #about-me p {
     font-size: 16px;
     max-width: 90vw;
   }
-
   .all_skills, .all_credentials {
     justify-content: center;
   }
-
   .topdiv {
     gap: 15px;
   }
-
   .topmenu {
     font-size: 16px;
     padding: 6px 10px;
@@ -408,17 +371,38 @@ h2 {
     padding: 16px 10px;
     gap: 12px;
   }
-
+  .nav-toggle-label {
+    display: flex;
+    margin-bottom: 8px;
+  }
   .topdiv {
+    display: none;
     flex-direction: column;
     width: 100%;
     gap: 8px;
   }
-
+  .nav-toggle:checked + .nav-toggle-label + .topdiv {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
   .topmenu {
     width: 100%;
     text-align: left;
     font-size: 16px;
     padding: 10px 0;
+  }
+  /* Skills in 2 kolommen op mobiel */
+  .all_skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 0 6px 24px;
+    max-width: 100%;
+  }
+  .skill {
+    margin: 0;
+    width: 95%;
+    padding: 12px 4px;
   }
 }
